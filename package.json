@@ -8,7 +8,6 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "node": "hardhat node",
-    "deploy:local": "hardhat ignition deploy ignition/modules/Counter.ts --network localhost",
     "format": "prettier --write ."
   },
   "devDependencies": {
