@@ -46,7 +46,7 @@ contract Survey {
 
   function submitAnswer(Answer calldata _answer) external {
     require(_answer.answers.length == questions.length, "Mismatched answers length");
-    require(answers.length <= targetNumber, "This survey has been ended");
+    require(answers.length < targetNumber, "This survey has been ended");
     answers.push(
       Answer({respondent: _answer.respondent, answers: _answer.answers})
     );
