@@ -29,8 +29,8 @@ function createSurvey(
   Survey survey = new Survey{value: msg.value}(
     _survey.title,
     _survey.description,
-    _survey.questions,
-    _survey.targetNumber
+    _survey.targetNumber,
+    _survey.questions
   );
     surveys.push(survey);
     emit SurveyCreated(address(survey));
