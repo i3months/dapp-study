@@ -40,3 +40,6 @@
 /.claude
 AGENTS.md
 CLAUDE.md
+
+# Hardhat Ignition 로컬 배포 기록
+ignition/deployments/
